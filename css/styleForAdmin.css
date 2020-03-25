@@ -18,10 +18,10 @@ body{
     height: 45vh;  
 }
 .profile{
-    width: 200px;
-    height: 200px;
+    background-image: url(../images/profilePic.png);
+    width: 4vh;
+    height: 4vh;
     position: relative;
-    background-color: #C7B299;
     top: 150px;
     left: 160px;
     border-radius: 100px;
