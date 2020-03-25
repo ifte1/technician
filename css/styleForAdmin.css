@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: #381844;
+}
+.cover_profile{
+    
+    width: 100%;
+    height: 60vh;
+}
+.cover{
+    background-image: url(../images/adminMan.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 45vh;  
+}
+.profile{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: #C7B299;
+    top: 150px;
+    left: 160px;
+    border-radius: 100px;
+}
