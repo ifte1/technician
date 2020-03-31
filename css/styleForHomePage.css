@@ -32,7 +32,7 @@ ul.left{
 }
 ul.right{
     display: inline-block;
-    margin-left: 650px;
+    margin: 0;
 }
 ul li a:hover{
     background-color: beige;

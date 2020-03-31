@@ -9,15 +9,14 @@
     <header>
         <div class="main">
             <ul class="left">
-                <li><a href="#">Home</a></li>
+                <li><a href="HomePage.php">Home</a></li>
                 <li><a href="#">Catagory</a></li>
                 <li><a href="#">Technician</a></li>
                 <li><a href="#">About</a></li>
-            </ul>
-            <ul class="right">
-                <li><a href="#">Ragistration</a></li>
-                <li><a href="#">Log in</a></li>
-            </ul>
+            
+                <li><a href="userRegistration.php">Registration</a></li>
+                <li><a href="loginFile.php">Log in</a></li>
+        
         </div>
         <h1 class="t">Technician Finder</h1>
     </header>
