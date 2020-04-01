@@ -18,7 +18,7 @@
                 <li><a href="#">Ragistration</a></li>
                 <li><a href="#">Log in</a></li>
             </ul>
-        </div>
+        </div>  
         <h1 class="t">Technician Finder</h1>
     </header>
     <div class="back">
