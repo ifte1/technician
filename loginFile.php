@@ -1,3 +1,12 @@
+<?php
+include('Back_End/logincheck.php');
+
+if(isset($_SESSION['username'])){
+header("location: pageone.php");
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,18 +16,16 @@
 <body>
    <div class="form-box">
       <h1>Log In</h1>
-      <from id="user" class="input-group">
-        <input type="text" class="input-field" placeholder="User Name" required>
+      <form id="user" class="input-group" action="" method="post">
+        <input type="text" class="input-field" placeholder="User Name" name=username required>
                                
-        <input type="password" class="input-field" placeholder="Password" required>
-        
-        <h5>Don't have an account? <a href="#">Sign Up here</a></h5>
+        <input type="password" class="input-field" placeholder="Password" name=password required>
                 
-        <button type="submit" class="submit-btn">Cancel</button>
-        <button type="submit" class="submit-btn">Login</button>
-        
-        <h5>Forget password? <a href="#">Change Password</a></h5>
-      </from>
+        <button type="button" class="submit-btn">Cancel</button>
+        <button type="submit" name="submit" class="submit-btn">Login</button>
+
+        <h5>Don't have an account? <a href="userRegistration.php">Sign Up here</a></h5>
+      </form>
        
    </div>
     
