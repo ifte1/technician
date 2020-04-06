@@ -17,6 +17,10 @@
                     <li><a href="#">Technician</a></li>
                     <li><a href="#">About</a></li>
                    </ul>
+                   <ul id="left-option">
+                      <li><a href="#">Search</a></li>
+                       <li><a href="#">Log out</a></li>
+                   </ul>
                </div>
                <div class="profile">
                 
