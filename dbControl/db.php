@@ -24,7 +24,22 @@ if ($conn->query($result) === TRUE) {
     print "<h2> Congratulation, Registration successfull</h2>";
     print" Now you are the member of our community ";
 } else {
+   
     echo "Error: " . $result . "<br>" . $conn->error;
+}
+
+function show ($conn)
+{
+    $q=$conn->query ("select * from user ");
+    return $q;
+
+}
+function deleteuser($conn,$idn)
+
+{
+    $q= $conn->query("DELETE FROM `user` WHERE `user`.`id` = '$idn'");
+   return $q;
+
 }
 
  }
