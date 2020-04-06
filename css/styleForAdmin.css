@@ -2,10 +2,14 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 body {
     background-color: #381844;
+    height: 1100px;
+    width: auto;
 }
 
 .cover_profile {
@@ -21,8 +25,20 @@ body {
     height: 45vh;
 }
 
-.profile {
-    background-image: url(../images/profile.jpg);
+.profile1 {
+    background-image: url(../images/ifti.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 150px;
+    left: 161px;
+    border-radius: 100px;
+    display: inline-block;
+}
+.profile2{
+    background-image: url(../images/saqib.jpg);
     background-size: cover;
     background-position: center;
     width: 200px;
@@ -31,8 +47,22 @@ body {
     top: 150px;
     left: 160px;
     border-radius: 100px;
+    display: inline-block;
+    margin-left: 255px;
 }
-
+.profile3{
+    background-image: url(../images/hasin.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 150px;
+    left: 160px;
+    border-radius: 100px;
+    display: inline-block;
+    margin-left: 255px;
+}
 ul li a {
     color: #C0C0C0;
     text-decoration: none;
@@ -53,10 +83,44 @@ ul li a {
 }
 #left-option{
     display: inline-block;
-    margin-left: 50%;
+    margin-left: 72%;
 }
 a:hover{
     background-color: beige;
     border-radius: 5px;
     color: darkslategrey;
+}
+.box1{
+    height: 500px;
+    width: 350px;
+    background-color: #30143A;
+    margin-left: 6%;
+    margin-top: 2%;
+    display: inline-block;
+}
+.box2{
+    height: 500px;
+    width: 350px;
+    background-color: #30143A;
+    margin-left: 6%;
+    margin-top: 2%;
+    display: inline-block;
+}
+.box3{
+    height: 500px;
+    width: 350px;
+    background-color: #30143A;
+    margin-left: 7%;
+    margin-top: 2%;
+    display: inline-block;
+}
+.box1:hover, .box2:hover, .box3:hover{
+    box-shadow: 0 0 20px 9px #30143A;
+}
+span{
+    margin-top: 100px;
+    margin-left: 30px;
+    position: absolute;
+    padding: 10px 5px;
+    color: aliceblue;
 }
