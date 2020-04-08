@@ -36,9 +36,9 @@ h1{
 
 #btn{
     top: 0;
-    right: 0;
+    left: 0;
     position: absolute;
-    width: 120px;
+    width: 110px;
     height: 100%;
     background: #AC90B7;
     border-radius: 30px;

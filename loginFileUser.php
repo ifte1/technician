@@ -11,17 +11,17 @@ header("location: pageone.php");
 <html lang="en">
 <head>
     <title>Log In</title>
-    <link rel="stylesheet" href="css/styleForLogin.css">
+    <link rel="stylesheet" href="css/styleForLoginUser.css">
 </head>
 <body>
    <div class="form-box">
       <h1>Log In</h1>
       <div class="button-box">
-                <a style="text-decoration:none" href="loginFileUser.php">
-                    <button type="button" class="toggle-btn">User</button>
-                </a>
                 <div id="btn"></div>
-                <button type="button" class="toggle-btn">Technician</button>
+                <button type="button" class="toggle-btn">User</button>
+                <a style="text-decoration:none" href="loginFile.php">
+                    <button type="button" class="toggle-btn">Technician</button>
+                </a>
         </div>
       <form id="user" class="input-group" action="" method="post">
         <input type="text" class="input-field" placeholder="User Name" name=username required>
