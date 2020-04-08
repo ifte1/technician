@@ -41,8 +41,10 @@ h1{
     outline: none;
     position: relative;
 }
+.toggle-btn a{
+    text-decoration: none;
+}
 #btn{
-    
     top: 0;
     right: 0;
     position: absolute;
@@ -52,6 +54,7 @@ h1{
     border-radius: 30px;
     transition: .5s;
 }
+
 .input-group{
     top: 160px;
     position: absolute;

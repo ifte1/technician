@@ -22,7 +22,7 @@
             <div class="button-box">
                 <button type="button" class="toggle-btn">User</button>
                 <div id="btn"></div>
-                <button type="button" class="toggle-btn">Technician</button>
+                <button type="button" class="toggle-btn"><a href="userRegistration.php">Technician</a></button>
             </div>
             <form id="technician" class="input-group"action="#" onsubmit="return validation();">
                 <input type="text" class="input-field" placeholder="Full Name" required>
