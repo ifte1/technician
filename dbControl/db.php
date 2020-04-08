@@ -27,6 +27,7 @@ if ($conn->query($result) === TRUE) {
    
     echo "Error: " . $result . "<br>" . $conn->error;
 }
+ }
 
 function show ($conn)
 {
@@ -41,6 +42,24 @@ function deleteuser($conn,$idn)
    return $q;
 
 }
+function technicianupdate($conn,$fullname, $username, $mobile,$gender, $password, $email,$birth,$experience,$catagory,$address,$file)
+ {
+$result =  "INSERT INTO `tTechnician` (`id`, `Fullname`, `username`, `mobile`, `gender`, `password`, `email`, `birth`, `experience`, `catagory`, `address`, `file`) VALUES (NULL, '$fullname', '$username', '$mobile', '$gender', '$password', '$email', '$birth', '$experience', '$catagory', '$address', '$file');";
+if ($conn->query($result) === TRUE) {
+    print "<h2> Congratulation.</h2>";
+    print" Please Wait for Admin approval";
+    ?>
+
+     <script> 
+     alert('Successful,Your request is pending for approval');
+     
+      </script>
+    <?php
+} else {
+   
+    echo "Error: " . $result . "<br>" . $conn->error;
+}
+
 
  }
 
