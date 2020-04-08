@@ -41,9 +41,7 @@ h1{
     outline: none;
     position: relative;
 }
-.toggle-btn a{
-    text-decoration: none;
-}
+
 #btn{
     top: 0;
     right: 0;

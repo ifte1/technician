@@ -20,9 +20,11 @@
        <h1>Registration Form</h1>
         <div class="form-box">
             <div class="button-box">
-                <button type="button" class="toggle-btn">User</button>
+                <a style="text-decoration:none" href="userRegistration.php">
+                    <button type="button" class="toggle-btn">User</button>
+                </a>
                 <div id="btn"></div>
-                <button type="button" class="toggle-btn"><a href="userRegistration.php">Technician</a></button>
+                <button type="button" class="toggle-btn">Technician</button>
             </div>
             <form id="technician" class="input-group"action="#" onsubmit="return validation();">
                 <input type="text" class="input-field" placeholder="Full Name" required>

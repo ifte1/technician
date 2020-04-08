@@ -5,7 +5,7 @@
     color: white;
 }
 .hero{
-    height:150%;
+    height:165%;
     width: 100%;
     background: #381844;
     background-position: center;
@@ -19,7 +19,7 @@ h1{
 }
 .form-box{
     width: 500px;
-    height: 750px;
+    height: 900px;
     position: relative;
     margin: 6% auto;
     background: #381844;
@@ -40,6 +40,9 @@ h1{
     border: 0;
     outline: none;
     position: relative;
+}
+.toggle-btn a{
+    text-decoration: none;
 }
 #btn{
     
@@ -85,7 +88,7 @@ h1{
     background-color: darkviolet;
 }
 .radio-field{
-    margin: 25px 10px 25px 0;
+    margin: 25px 10px 25px 10px;
 }
 #user{
     left: 100px;

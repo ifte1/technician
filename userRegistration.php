@@ -24,7 +24,9 @@
             <div class="button-box">
                <div id="btn"></div>
                 <button type="button" class="toggle-btn">User</button>
-                <button type="button" class="toggle-btn">Technician</button>
+                <a style="text-decoration:none" href="technicianRegistration.php">
+                    <button type="button" class="toggle-btn">Technician</button>
+                </a>
             </div>
             <form id="user" class="input-group"action="Back_End/userRegCheck.php" onsubmit="return validation();" method="POST">
                 <input type="text" class="input-field" name ="fullname" placeholder="Full Name" required>
