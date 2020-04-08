@@ -27,11 +27,11 @@
             <form id="technician" class="input-group"action="#" onsubmit="return validation();">
                 <input type="text" class="input-field" placeholder="Full Name" required>
 
-                <input type="text" class="input-field" placeholder="User Name" id="username" >
+                <input type="text" class="input-field" placeholder="User Name" id="username">
                 <label id="lc" style=" color:red; visibility:hidden;">* Minimum 3 letters </label>
 
                 <input type="phone" class="input-field" placeholder="Mobile Number" id="mobile" >
-                <label id="mlc" style=" color:red; visibility:hidden;">* Enter a valid mobile number</label></br>
+                <label id="mlc" style=" color:red; visibility:hidden;">* Enter a valid mobile number</label><br>
                 
                 Sex:                  
                 <input type="radio" class="radio-field" name="gender" value="Female" required>Female
@@ -48,14 +48,12 @@
                 <label id="elc" style=" color:red; visibility:hidden;">* Enter a valid email </label>
                 <input type="date" class="input-field" placeholder="Date of birth" required>
                 <br><br>
-                </select>
                 <span>Experience:</span>
                 <select class="cat" id="technicians" name="catagory" form="technician"required>
                       <option value="low" >1-5 years</option>
                       <option value="medium" >5-10 years</option>
                       <option value="high" >10-15 years</option>
                       <option value="very high">>15</option>
-                  
                   
                 </select>
                 <br><br>
@@ -67,7 +65,7 @@
                       <option value="Industrial Technician">Industrial Technician</option>
                       <option value="Radiological Technician">Radiological Technician</option>
                       <option value="Plumber">Plumber</option>
-                  
+                </select>
                 
                 
                 <input type="text" class="input-field" placeholder="Address" required>
@@ -79,10 +77,7 @@
         </div>
     </div> 
 
-    <script src="js/technicianValid.js">
-  
-
-</script>
+    <script src="js/technicianValid.js"></script>
 
 
 </body>
