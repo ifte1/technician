@@ -42,7 +42,7 @@ function deleteuser($conn,$idn)
    return $q;
 
 }
-function technicianupdate($conn,$fullname, $username, $mobile,$gender, $password, $email,$birth,$experience,$catagory,$address,$file)
+function tTechnicianupdate($conn,$fullname, $username, $mobile,$gender, $password, $email,$birth,$experience,$catagory,$address,$file)
  {
 $result =  "INSERT INTO `tTechnician` (`id`, `Fullname`, `username`, `mobile`, `gender`, `password`, `email`, `birth`, `experience`, `catagory`, `address`, `file`) VALUES (NULL, '$fullname', '$username', '$mobile', '$gender', '$password', '$email', '$birth', '$experience', '$catagory', '$address', '$file');";
 if ($conn->query($result) === TRUE) {
@@ -59,7 +59,22 @@ if ($conn->query($result) === TRUE) {
    
     echo "Error: " . $result . "<br>" . $conn->error;
 }
-
+ }
+function Technicianupdate($conn,$fullname, $username, $mobile,$gender, $password, $email,$birth,$experience,$catagory,$address,$file)
+ {
+$result =  "INSERT INTO `technician` (`id`, `Fullname`, `username`, `mobile`, `gender`, `password`, `email`, `birth`, `experience`, `category`, `address`, `file`) VALUES (NULL, '$fullname', '$username', '$mobile', '$gender', '$password', '$email', '$birth', '$experience', '$catagory', '$address', '$file');";
+if ($conn->query($result) === TRUE) {
+      
+      
+    ?>
+     <script type=text/script> 
+     alert('Successful,you approved the technician');     
+      </script>
+    <?php
+} else {
+   
+    echo "Error: " . $result . "<br>" . $conn->error;
+}
 
  }
  function deletetTechnician($conn,$idn)
@@ -74,5 +89,6 @@ function CloseCon($conn)
  {
  $conn -> close();
  }
+
 }
 ?>
