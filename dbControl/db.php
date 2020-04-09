@@ -62,6 +62,13 @@ if ($conn->query($result) === TRUE) {
 
 
  }
+ function deletetTechnician($conn,$idn)
+
+{
+    $q= $conn->query("DELETE FROM `tTechnician` WHERE tTechnician.`id` = '$idn'");
+   return $q;
+
+}
 
 function CloseCon($conn)
  {
