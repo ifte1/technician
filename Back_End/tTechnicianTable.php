@@ -21,11 +21,12 @@
 
 
 
-    <div>
+    <br><br><div>
       <h1 class="text-center bg-dark text-white" > New Request </h1>
-      <br>
-       <button id="displaydata" class="btn btn-success">display</button>
-       <table class="table table-triped table-bordered">
+      
+      
+       
+       <table class="table table-striped table-bordered">
        
           <thead class="text-center bg-primary text-white">
            <th>  Id </th>
@@ -34,11 +35,12 @@
            <th>  gender  </th>
            <th>   Password </th>
            <th>  Email   </th>
-           <th>  Birth  </th>
            <th>  Experience </th>
            <th>  category   </th>
            <th>  Address  </th>
            <th>  file  </th>
+           <th>  Accept </th>
+           <th>  Reject  </th>
           </thead>
          <tbody>
          
@@ -59,12 +61,15 @@
                 <td>  <?php echo $result['gender']; ?> </td>
                 <td>  <?php echo $result['password']; ?> </td>
                 <td>  <?php echo $result['email']; ?> </td>
-                <td>  <?php echo $result['birth']; ?> </td>
                 <td>  <?php echo $result['experience']; ?> </td>
                 <td>  <?php echo $result['catagory']; ?> </td>
                 <td>  <?php echo $result['address']; ?> </td>
                 <td> <img src="  <?php echo $result['file']; ?>"height="100px"width="100px"> </td>
 
+                <td> <button class="btn-success btn"> <a href="acceptTechnician.php?id=<?php echo $result['id']; ?>"
+                class="text-white"> Accept </a>  </button> </td>
+                <td> <button class="btn-danger btn"> <a href="rejectTechnician.php?id=<?php echo $result['id']; ?>" 
+                class="text-white"> Reject </a> </button> </td>
 
                 </tr>
 
