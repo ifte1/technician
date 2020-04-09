@@ -12,10 +12,9 @@
             <div class="cover">
                 <div class="menu_bar">
                    <ul class="options">
-                    <li><a href="#">User</a></li>
-                    <li><a href="#">Technician</a></li>
-                   </ul>
-                   <ul id="left-option">
+                    <li><a href="userTable.php">User</a></li>
+                    <li><a href="Back_End/technicianTable.php">Technician</a></li>
+                    <li><a href="Back_End/tTechnicianTable.php">New Request</a></li>
                        <li><a href="#">Log out</a></li>
                    </ul>
                </div>
