@@ -21,8 +21,12 @@ $result = $conn->query("SELECT * FROM ". $table." WHERE username='". $username."
  {
 $result =  "INSERT INTO `user` (`id`, `name`, `username`, `mobile`, `sex`, `password`, `email`, `birth-date`, `address`) VALUES (NULL, '$fullname', '$username','$mobile','$gender','$password','$email','$birth','$address');";
 if ($conn->query($result) === TRUE) {
-    print "<h2> Congratulation, Registration successfull</h2>";
-    print" Now you are the member of our community ";
+    ?>
+     <script> 
+     alert('Successful,Now you are the member of our community');
+      </script>
+    <?php
+
 } else {
    
     echo "Error: " . $result . "<br>" . $conn->error;
@@ -46,13 +50,10 @@ function tTechnicianupdate($conn,$fullname, $username, $mobile,$gender, $passwor
  {
 $result =  "INSERT INTO `tTechnician` (`id`, `Fullname`, `username`, `mobile`, `gender`, `password`, `email`, `birth`, `experience`, `catagory`, `address`, `file`) VALUES (NULL, '$fullname', '$username', '$mobile', '$gender', '$password', '$email', '$birth', '$experience', '$catagory', '$address', '$file');";
 if ($conn->query($result) === TRUE) {
-    print "<h2> Congratulation.</h2>";
-    print" Please Wait for Admin approval";
+    
     ?>
-
      <script> 
      alert('Successful,Your request is pending for approval');
-     
       </script>
     <?php
 } else {
@@ -67,9 +68,10 @@ if ($conn->query($result) === TRUE) {
       
       
     ?>
-     <script type=text/script> 
+     <script> 
      alert('Successful,you approved the technician');     
       </script>
+      
     <?php
 } else {
    
@@ -84,6 +86,25 @@ if ($conn->query($result) === TRUE) {
    return $q;
 
 }
+function messag($conn,$uname,$tname,$tmes)
+ {
+$result=$conn->query("INSERT INTO `message` (`id`, `From1`, `To1`, `message`) VALUES (NULL, `$uname`, `$$tname`,`$tmes`)");
+if ($conn->query($result) === TRUE) {
+      
+      
+    ?>
+     <script> 
+     alert('Successful,Message is send');     
+      </script>
+    <?php
+} 
+else {
+   
+    echo "Error: " . $result . "<br>" . $conn->error;
+}
+
+ }
+
 
 function CloseCon($conn)
  {
