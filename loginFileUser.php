@@ -2,7 +2,7 @@
 include('Back_End/logincheck.php');
 
 if(isset($_SESSION['username'])){
-header("location: pageone.php");
+header("location: userprofile.php");
 }
 ?>
 
