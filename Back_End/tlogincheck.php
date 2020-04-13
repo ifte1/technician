@@ -19,7 +19,7 @@ $password=$_POST['password'];
 $connection = new db();
 $conobj=$connection->OpenCon();
 
-$userQuery=$connection->CheckUser($conobj,"user",$username,$password);
+$userQuery=$connection->CheckUser($conobj,"technician",$username,$password);
 
 if ($userQuery->num_rows > 0) {
 $_SESSION["username"] = $username;

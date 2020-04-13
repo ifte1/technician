@@ -14,7 +14,7 @@
                 <li><a href="adminLogin.php">Admin</a></li>
         
                 <li><a href="userRegistration.php">Ragistration</a></li>
-                <li><a href="loginFile.php">Log in</a></li>
+                <li><a href="loginFileUser.php">Log in</a></li>
             </ul>
         </div>  
         <h1 class="t">Technician Finder</h1>

@@ -1,8 +1,8 @@
 <?php
-include('Back_End/logincheck.php');
+include('Back_End/tlogincheck.php');
 
 if(isset($_SESSION['username'])){
-header("location: pageone.php");
+header("location: technicianProfile.php");
 }
 ?>
 
@@ -24,9 +24,9 @@ header("location: pageone.php");
                 <button type="button" class="toggle-btn">Technician</button>
         </div>
       <form id="user" class="input-group" action="" method="post">
-        <input type="text" class="input-field" placeholder="User Name" name=username required>
+        <input type="text" class="input-field" placeholder="User Name" name=username >
                                
-        <input type="password" class="input-field" placeholder="Password" name=password required>
+        <input type="password" class="input-field" placeholder="Password" name=password >
                 
         <button type="button" class="submit-btn">Cancel</button>
         <button type="submit" name="submit" class="submit-btn">Login</button>
