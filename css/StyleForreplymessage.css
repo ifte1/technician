@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: white;
+}
+body {
+  background-color: #381844;
+}
+
+.container {
+  width: 35%;
+  height: 50%;
+  background: #381844;
+  padding: 5px;
+  box-shadow: 0 0 20px 9px #30143a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% 31%;
+  position: relative;
+}
+.submit-btn {
+  background-color: #381844;
+  margin: 15px 5px 15px 5px;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 3px 20px;
+  width: 0 auto;
+}
+#message-field {
+  color: black;
+  background-color: #381844;
+}
