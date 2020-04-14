@@ -33,7 +33,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
         {
           if($pass=="ifte123")
           {
-            header("Location:HomePage.php");
+            header("Location:adminProfile.php");
           }
           else{
             ?>
