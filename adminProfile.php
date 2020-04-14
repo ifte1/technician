@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +16,8 @@
                     <li><a href="userTable.php">User</a></li>
                     <li><a href="Back_End/technicianTable.php">Technician</a></li>
                     <li><a href="Back_End/tTechnicianTable.php">New Request</a></li>
-                       <li><a href="#">Log out</a></li>
+                    <li><a href="Back_End/Ainbox.php">Inbox</a></li>
+                       <li><a href="Back_End/logout.php">Log out</a></li>
                    </ul>
                </div>
                <div class="profile1">
