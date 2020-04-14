@@ -33,7 +33,7 @@ body {
   width: 101%;
   height: 3vh;
   color: black;
-  border: 1px solid aliceblue;
+  border: 1px solid #a09a9a;
   background-color: #381844;
 }
 #message-field {
