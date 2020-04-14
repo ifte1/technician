@@ -28,7 +28,7 @@ else{
                 <div class="menu_bar">
                    <ul class="options">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Inbox</a></li>
+                    <li><a href="Back_End/tinbox.php">Inbox</a></li>
                     <li><a href="#">Technician</a></li>
                     <li><a href="#">About</a></li>
                    </ul>
