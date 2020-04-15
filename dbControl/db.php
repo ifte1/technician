@@ -103,7 +103,26 @@ else {
     echo "Error: " . $result . "<br>" . $conn->error;
 }
 
+
  }
+
+
+
+ function showuser($conn,$uname,$pass)
+
+ {
+     $q= $conn->query("SELECT * FROM `user` WHERE (username='$uname' AND password='$pass')");
+    return $q;
+ }
+
+ function showtechnician($conn,$uname,$pass)
+
+ {
+     $q= $conn->query("SELECT * FROM `technician` WHERE (username='$uname' AND password='$pass')");
+    return $q;
+ }
+
+
 
 
 function CloseCon($conn)
