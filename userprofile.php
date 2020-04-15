@@ -1,5 +1,5 @@
 
-<?php /*
+<?php
 session_start(); 
 if(empty($_SESSION["username"])) 
 {
@@ -7,7 +7,7 @@ header("Location: loginFileUser.php"); // Redirecting To Home Page
 }
 else{
    $uname= $_SESSION["username"];
-}*/
+}
 ?>
 
 <!DOCTYPE html>
@@ -31,7 +31,7 @@ else{
                 <div class="menu_bar">
                    <ul class="options">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Catagories</a></li>
+                    <li><a href="userShowProfile.php">Profile</a></li>
                     <li><a href="#">Technician</a></li>
                     <li><a href="messageTable.php">Inbox</a></li>
                        <li><a href="Back_End/logout.php">Log out</a></li>
@@ -47,4 +47,3 @@ else{
     </div>
 </body>
 </html>
-
