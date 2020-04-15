@@ -10,7 +10,7 @@
         <div class="main">
             <ul class="left">
                 <li><a href="HomePage.php">Home</a></li>
-                <li><a href="#">Technician</a></li>
+                <li><a href="hometechnician.php">Technician</a></li>
                 <li><a href="adminLogin.php">Admin</a></li>
         
                 <li><a href="userRegistration.php">Ragistration</a></li>
