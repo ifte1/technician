@@ -26,7 +26,7 @@ if ($conn->query($result) === TRUE) {
      alert('Successful,Now you are the member of our community');
       </script>
     <?php
-
+     
 } else {
    
     echo "Error: " . $result . "<br>" . $conn->error;
@@ -123,12 +123,58 @@ else {
  }
 
 
+ function getuserbyid($conn,$id)
+
+ {
+     $q= $conn->query("SELECT * FROM `user` WHERE  id='$id' ");
+    return $q;
+ }
+
+
+
+ function userupdateinsert($conn,$fullname, $username, $mobile, $password, $email,$birth , $address,$id)
+ {
+
+$result="UPDATE `user` SET `name` = '$fullname', `username` = '$username', `mobile` = '$mobile', `password` = '$password', `email` = '$email', `birth-date` = '$birth', `address` = '$address' WHERE `user`.`id` = '$id';";
+if ($conn->query($result) === TRUE) {
+
+header('location:../userShowProfile.php');
+} else {
+   
+    echo "Error: " . $result . "<br>" . $conn->error;
+}
+ }
+
+
+
+ function gettechbyid($conn,$id)
+
+ {
+     $q= $conn->query("SELECT * FROM `technician` WHERE  id='$id' ");
+    return $q;
+ }
+
 
 
 function CloseCon($conn)
  {
  $conn -> close();
  }
+
+ function techupdateinsert($conn,$fullname, $username, $mobile, $password, $email,$birth , $address,$id)
+ {
+
+$result="UPDATE `technician` SET `Fullname` = '$fullname', `username` = '$username', `mobile` = ' $mobile', `password` = '$password', `email` = '$email', `birth` = '$birth', `address` = '$address' WHERE `technician`.`id` = $id;";
+if ($conn->query($result) === TRUE) {
+
+header('location:../technicianShowProfile.php');
+} else {
+   
+    echo "Error: " . $result . "<br>" . $conn->error;
+}
+ }
+
+
 
 }
 ?>
