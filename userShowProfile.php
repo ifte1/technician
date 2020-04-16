@@ -35,7 +35,8 @@ while($result=mysqli_fetch_array($query) )
        <tr><td> Email: </td> <td> <?php echo $result['email'] ?> </td></tr> 
        <tr><td> Birth_Date: </td> <td><?php echo $result['birth-date'] ?> </td></tr> 
        <tr><td> Address: </td> <td> <?php echo $result['address'] ?> </td></tr> 
-      
+       <tr><td> <button class=""> <a href="Updateuserprofile.php?id=<?php echo $result['id']; ?>"
+       > Update </a>  </button></td></tr> 
       </table>
 
    <?php
