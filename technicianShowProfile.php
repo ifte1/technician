@@ -34,10 +34,11 @@ while($result=mysqli_fetch_array($query) )
        <tr><td> Password: </td> <td><?php echo $result['password'] ?> </td></tr> 
        <tr><td> Email: </td> <td> <?php echo $result['email'] ?> </td></tr> 
        <tr><td> Birth_Date: </td> <td><?php echo $result['birth'] ?> </td></tr> 
-       <tr><td> Birth_Date: </td> <td><?php echo $result['experience'] ?> </td></tr> 
-       <tr><td> Birth_Date: </td> <td><?php echo $result['category'] ?> </td></tr> 
+       <tr><td> Experience: </td> <td><?php echo $result['experience'] ?> </td></tr> 
+       <tr><td> Category: </td> <td><?php echo $result['category'] ?> </td></tr> 
        <tr><td> Address: </td> <td> <?php echo $result['address'] ?> </td></tr> 
-      
+       <tr><td> <button class=""> <a href="Updatetechprofile.php?id=<?php echo $result['id']; ?>"
+       > Update </a>  </button></td></tr> 
       </table>
 
    <?php
