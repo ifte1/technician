@@ -155,12 +155,6 @@ header('location:../userShowProfile.php');
  }
 
 
-
-function CloseCon($conn)
- {
- $conn -> close();
- }
-
  function techupdateinsert($conn,$fullname, $username, $mobile, $password, $email,$birth , $address,$id)
  {
 
@@ -173,6 +167,29 @@ header('location:../technicianShowProfile.php');
     echo "Error: " . $result . "<br>" . $conn->error;
 }
  }
+
+
+ function gettech($conn,$username,$mobile)
+
+ {
+     $q= $conn->query("SELECT * FROM `technician` WHERE (`technician`.`username`='$username' AND `technician`.`mobile`=$mobile)");
+    return $q;
+ }
+ function getuser($conn,$username,$mobile)
+
+ {
+     $q= $conn->query("SELECT * FROM `user` WHERE (`user`.`username`='$username' AND `user`.`mobile`=$mobile)");
+    return $q;
+ }
+
+
+
+ function CloseCon($conn)
+ {
+ $conn -> close();
+ }
+
+
 
 
 
