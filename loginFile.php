@@ -4,6 +4,17 @@ include('Back_End/tlogincheck.php');
 if(isset($_SESSION['username'])){
 header("location: technicianProfile.php");
 }
+if(isset($_SESSION['mobi'])){
+  
+  ?>
+  <script> 
+  alert('Successful,Password is updated');     
+   </script>
+ <?php
+ session_destroy();
+
+  }
+
 ?>
 
 
@@ -28,10 +39,11 @@ header("location: technicianProfile.php");
                                
         <input type="password" class="input-field" placeholder="Password" name=password >
                 
-        <button type="button" class="submit-btn">Cancel</button>
+        <button type="button" class="submit-btn"><a href="HomePage.php">Cancel</a></button>
         <button type="submit" name="submit" class="submit-btn">Login</button>
 
         <h5>Don't have an account? <a href="userRegistration.php">Sign Up here</a></h5>
+        <h5>Forget Your Password? <a href="RecoverTechPass.php">Recover here</a></h5>
       </form>
        
    </div>
