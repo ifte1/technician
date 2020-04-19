@@ -40,7 +40,7 @@ if(isset($_SESSION['mobi'])){
                                
         <input type="password" class="input-field" placeholder="Password" name=password >
                 
-        <button type="button" class="submit-btn">Cancel</button>
+        <button type="button" class="submit-btn"><a href="HomePage.php">Cancel</a></button>
         <button type="submit" name="submit" class="submit-btn">Login</button>
 
         <h5>Don't have an account? <a href="userRegistration.php">Sign Up here</a></h5>
