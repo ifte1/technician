@@ -182,6 +182,22 @@ header('location:../technicianShowProfile.php');
     return $q;
  }
 
+ function getuserbypass($conn,$username,$pass)
+
+ {
+     $q= $conn->query("SELECT * FROM `user` WHERE (`user`.`username`='$username' AND `user`.`password`='$pass')");
+    return $q;
+ }
+
+
+ function gettechbypass($conn,$username,$pass)
+
+ {
+     $q= $conn->query("SELECT * FROM `technician` WHERE (`technician`.`username`='$username' AND `technician`.`password`='$pass')");
+    return $q;
+ }
+
+
 
 
  function CloseCon($conn)
