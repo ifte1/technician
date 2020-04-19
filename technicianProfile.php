@@ -9,6 +9,17 @@ else{
    $password=$_SESSION["password"];
 
 }
+if(isset($_SESSION['id'])){
+  
+    ?>
+    <script> 
+    alert('Successful,Password is changed now');     
+     </script>
+   <?php
+  unset($_SESSION['id']);
+    }
+
+
 ?>
 
 
@@ -26,13 +37,11 @@ else{
             <div class="cover">
                 <div class="menu_bar">
                    <ul class="options">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="technicianProfile.php">Home</a></li>
                     <li><a href="Back_End/tinbox.php">Inbox</a></li>
                     <li><a href="technicianShowProfile.php">Profile</a></li>
-                    <li><a href="#">About</a></li>
-                   </ul>
-                   <ul id="left-option">
-                       <li><a href="Back_End/logout.php">Log out</a></li>
+                    <li><a href="changepasstech.php">Change Password</a></li>
+                    <li><a href="Back_End/logout.php">Log out</a></li>
                    </ul>
         </div>
     </div>
