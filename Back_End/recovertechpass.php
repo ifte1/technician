@@ -6,9 +6,10 @@ session_start();
 if (isset($_POST['submit'])) {
 if (empty($_POST['username']) || empty($_POST['mobile']) ||empty($_POST['password'])) {
 
-   ?>
-    <script> alert("Username or password or mobile number is invalid");</script>
-  <?php  
+  $o="no";
+  $_SESSION["empt"] = $o;
+ 
+ header('location:../RecoverTechPass.php');
 }
 else
 {
@@ -49,12 +50,10 @@ else{
 
     
    
-  ?>
-   <script> 
-   alert('invalid username or mobile number');     
-    </script>
-  <?php
-   header('location:../loginFile.php');
+  $n="no";
+  $_SESSION["n"] = $n;
+
+    header('location:../RecoverTechPass.php');
 
 }
 

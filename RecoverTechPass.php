@@ -1,4 +1,27 @@
+<?php
+session_start();
+if(isset($_SESSION['empt'])){
+  
+    ?>
+    <script> alert("Please,Fill all the field");</script>
+  <?php 
+  unset($_SESSION['empt']); 
+  
+    }
 
+
+    if(isset($_SESSION['n'])){
+      ?>
+      <script> 
+      alert('invalid username or mobile number');     
+       </script>
+     <?php
+        unset($_SESSION['n']); 
+      
+        }
+
+
+?>
 
 
 <!DOCTYPE html>
