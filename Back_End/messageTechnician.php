@@ -1,5 +1,6 @@
-
-
+<?php 
+ include'messagepass.php';
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,14 +17,11 @@
         <input type="text" class="input-field" placeholder="User Name" name="username">
           <br><br>
           <h4>Message:</h4>                     
-        <textarea name="textarea" id="message-field" cols="40" rows="5" placeholder="Write Message..."></textarea>
+        <textarea type ="text" name="message" id="message-field" cols="40" rows="5" placeholder="Write Message..."></textarea>
          <br> <br>
         <button type="submit" name="submit" class="submit-btn">Send</button>
         <button type="button" name="cancel" class="submit-btn">Cancel</button>
-        <?php 
-          include'messagepass.php';
-
-        ?>
+        
   </form>
   
 </div>    

@@ -21,7 +21,7 @@ $filename= $file['name'];
 $connection = new db();
 $conobj=$connection->OpenCon();
 
-$userQuery=$connection->technicianupdate($conobj,$fullname, $username, $mobile,$gender, $password, $email,$birth,$experience,$catagory,$address,$filename);
+$userQuery=$connection->tTechnicianupdate($conobj,$fullname, $username, $mobile,$gender, $password, $email,$birth,$experience,$catagory,$address,$filename);
 
 
 $connection->CloseCon($conobj);

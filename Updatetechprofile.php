@@ -23,8 +23,6 @@
   <form id="user" class="input-group"action="Back_End/UpdateTechInfoInsert.php?id=<?php echo $id ; ?>" onsubmit="return validation();" method="POST">
                 <input type="text" class="input-field" name ="fullname" value="<?php echo htmlspecialchars($name); ?>">
                 
-                <input type="text" id ="username" name ="username"class="input-field" value="<?php echo htmlspecialchars($username); ?>">
-                <label id="lc" style=" color:red; visibility:hidden;">* Minimum 3 letters </label>
 
                 <input type="phone" class="input-field" id = "mobile" name = "mobile" value="<?php echo htmlspecialchars($mobile); ?>">
                 <label id="mlc" style=" color:red; visibility:hidden;">* Enter a valid mobile number</label></br>

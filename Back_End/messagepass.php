@@ -17,7 +17,7 @@
     $connection = new db();
     $conobj=$connection->OpenCon();
     
-    $q ="INSERT INTO `message` (`id`, `From1`, `To1`, `message`) VALUES (NULL, `$uname`, `$$tname`,`$tmes`)";
+    $q ="INSERT INTO `message` (`id`, `From1`, `To1`, `message`) VALUES (NULL, '$uname', '$tname', '$tmes')";
     $res=mysqli_query($conobj,$q);
      ?>
       <script > 

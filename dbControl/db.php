@@ -155,10 +155,10 @@ header('location:../userShowProfile.php');
  }
 
 
- function techupdateinsert($conn,$fullname, $username, $mobile, $password, $email,$birth , $address,$id)
+ function techupdateinsert($conn,$fullname,$mobile, $password, $email,$birth , $address,$id)
  {
 
-$result="UPDATE `technician` SET `Fullname` = '$fullname', `username` = '$username', `mobile` = ' $mobile', `password` = '$password', `email` = '$email', `birth` = '$birth', `address` = '$address' WHERE `technician`.`id` = $id;";
+$result="UPDATE `technician` SET `Fullname` = '$fullname', `mobile` = ' $mobile', `password` = '$password', `email` = '$email', `birth` = '$birth', `address` = '$address' WHERE `technician`.`id` = $id;";
 if ($conn->query($result) === TRUE) {
 
 header('location:../technicianShowProfile.php');

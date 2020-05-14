@@ -12,7 +12,7 @@
     <div class="container">
     <form id="user" class="input-group" action="" method="post">
         <h4>Message:</h4>                  
-        <textarea name="textarea" id="message-field" cols="40" rows="5" placeholder="Write Message..."></textarea>
+        <textarea name="message" id="message-field" cols="40" rows="5" placeholder="Write Message..."></textarea>
          <br> <br>
         <button type="submit" name="submit" class="submit-btn">Send</button>
 
