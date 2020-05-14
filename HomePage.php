@@ -1,3 +1,35 @@
+
+
+<?php
+session_start(); 
+
+if(isset($_SESSION['ifte'])){
+  
+    ?>
+     <script> 
+     alert('Successful,Now you are the member of our community');
+      </script>
+    <?php
+
+  unset($_SESSION['ifte']);
+ }
+
+ if(isset($_SESSION['khar'])){
+  
+    ?>
+    <script> 
+    alert('Successful,Your request is pending for approval');
+     </script>
+   <?php
+
+  unset($_SESSION['khar']);
+ }
+
+ session_destroy();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
