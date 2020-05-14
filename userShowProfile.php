@@ -1,4 +1,3 @@
-
 <?php
 
 session_start(); 
@@ -6,8 +5,17 @@ $uname=$_SESSION["username"];
 $pass=$_SESSION["password"];
 
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="css/userShowProfile.css">
+</head>
+<body>
 
-<h2> Welcome <?php  echo $uname ?> to your Profile</h2>
+<div class="box">
+    <h2> Welcome <?php  echo $uname ?> to your Profile</h2>
 
 <?php
 include('dbControl/db.php');
@@ -45,3 +53,7 @@ while($result=mysqli_fetch_array($query) )
 
 }
 ?>
+</div>
+
+</body>
+</html>
