@@ -1,0 +1,42 @@
+body{
+    background-color: #381844;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: aliceblue;
+}
+.box{
+    width: 500px;
+    height: 400px;
+    position: relative;
+    margin: 6% auto;
+    background: #381844;
+    padding: 5px;
+    box-shadow: 0 0 20px 9px #30143A;
+}
+.input-group{
+    position: relative;
+    margin: 150px 150px;
+}
+.submit-btn{
+    width: 40%;
+    padding: 10px 20px;
+    margin: 10px 10px 10px 10px;
+    cursor: pointer;
+    display: inline;
+    background: #381841;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 30px;
+}
+.input-field{
+    width: 110%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    color: aliceblue;
+}
