@@ -1,0 +1,38 @@
+body{
+    background-color: #381844;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+.box{
+    width: 500px;
+    height: 715px;
+    position: relative;
+    margin: 6% auto;
+    background: #381844;
+    padding: 5px;
+    box-shadow: 0 0 20px 9px #30143A;
+}
+.box table{
+    margin-left: 50px;
+}
+td{
+    padding-top: 7px;
+    color: aliceblue;
+}
+h2{
+    margin-left: 80px;
+}
+button{
+    width: 100px;
+    height: 30px;
+    margin: 10px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #30143A;
+    border-radius: 30px;
+    background-color: #381844;
+    border-color: black;
+}
+button a{
+    color: white;
+    text-decoration: none;
+}

@@ -1,4 +1,3 @@
-
 <?php
 
 session_start(); 
@@ -6,6 +5,17 @@ $uname=$_SESSION["username"];
 $pass=$_SESSION["password"];
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Technician Profile</title>
+    <link rel="stylesheet" href="css/technicianShowProfile.css">
+</head>
+<body>
+    <div class="box">
+
 
 <h2> Welcome <?php  echo $uname ?> to your Profile</h2>
 
@@ -47,3 +57,7 @@ while($result=mysqli_fetch_array($query) )
 
 }
 ?>
+
+    </div>
+</body>
+</html>
