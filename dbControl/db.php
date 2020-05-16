@@ -1,7 +1,8 @@
 <?php
-session_start();
+
+
 class db{
- 
+
 function OpenCon()
  {
  $dbhost = "localhost";
@@ -22,6 +23,7 @@ $result = $conn->query("SELECT * FROM ". $table." WHERE username='". $username."
  {
 $result =  "INSERT INTO `user` (`id`, `name`, `username`, `mobile`, `sex`, `password`, `email`, `birth-date`, `address`) VALUES (NULL, '$fullname', '$username','$mobile','$gender','$password','$email','$birth','$address');";
 if ($conn->query($result) === TRUE) {
+    session_start();
     $_SESSION["ifte"] = "ifte";
     header('location:../HomePage.php');
    
@@ -49,6 +51,7 @@ function tTechnicianupdate($conn,$fullname, $username, $mobile,$gender, $passwor
  {
 $result =  "INSERT INTO `tTechnician` (`id`, `Fullname`, `username`, `mobile`, `gender`, `password`, `email`, `birth`, `experience`, `catagory`, `address`, `file`) VALUES (NULL, '$fullname', '$username', '$mobile', '$gender', '$password', '$email', '$birth', '$experience', '$catagory', '$address', '$file');";
 if ($conn->query($result) === TRUE) {
+    session_start();
     $_SESSION["khar"] = "khar";
     header('location:../HomePage.php');
    

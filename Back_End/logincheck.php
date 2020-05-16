@@ -1,7 +1,7 @@
 <?php
 include('dbControl/db.php');
-session_start(); 
 
+session_start();
 
 // store session data
 if (isset($_POST['submit'])) {

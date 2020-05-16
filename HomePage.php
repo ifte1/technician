@@ -12,6 +12,7 @@ if(isset($_SESSION['ifte'])){
     <?php
 
   unset($_SESSION['ifte']);
+  session_destroy();
  }
 
  if(isset($_SESSION['khar'])){
@@ -23,9 +24,10 @@ if(isset($_SESSION['ifte'])){
    <?php
 
   unset($_SESSION['khar']);
+  session_destroy();
  }
 
- session_destroy();
+ 
 
 ?>
 
