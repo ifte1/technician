@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/styleForHomePage.css">
+</head>
+<body>
+
+<?php include 'HomePage.php';?>
+    
+</body>
+</html>
